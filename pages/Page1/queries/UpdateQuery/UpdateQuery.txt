@@ -1,0 +1,6 @@
+UPDATE auth."audit_log_entries" SET
+		"ip_address" = '{{update_form.fieldState.ip_address.isVisible ? update_form.formData.ip_address : update_form.sourceData.ip_address}}',
+		"instance_id" = '{{update_form.fieldState.instance_id.isVisible ? update_form.formData.instance_id : update_form.sourceData.instance_id}}',
+    "payload" = '{{update_form.fieldState.payload.isVisible ? update_form.formData.payload : update_form.sourceData.payload}}',
+		"created_at" = '{{update_form.fieldState.created_at.isVisible ? update_form.formData.created_at : update_form.sourceData.created_at}}'
+WHERE "id" = {{data_table.selectedRow.id}};
