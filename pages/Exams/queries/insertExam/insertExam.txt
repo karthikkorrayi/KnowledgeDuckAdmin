@@ -1,0 +1,6 @@
+INSERT INTO exams (title, exam_date, status)
+VALUES (
+  '{{ExamForm.data.title}}',
+  '{{ExamForm.data.exam_date}}',
+  '{{ExamForm.data.status}}'
+);

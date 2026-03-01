@@ -21,8 +21,12 @@
   "icon": "file",
   "pages": [
     {
-      "id": "Page1",
+      "id": "Jobs",
       "isDefault": true
+    },
+    {
+      "id": "Exams",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

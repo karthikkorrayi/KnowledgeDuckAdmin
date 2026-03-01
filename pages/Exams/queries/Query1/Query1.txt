@@ -1,0 +1,1 @@
+SELECT * FROM jobs ORDER BY posted_date DESC;

@@ -1,0 +1,1 @@
+UPDATE public.jobs SET "location"= '{{Table1.updatedRow.location}}', "qualification"= '{{Table1.updatedRow.qualification}}', "last_date"= '{{Table1.updatedRow.last_date}}', "posted_date"= '{{Table1.updatedRow.posted_date}}', "status"= '{{Table1.updatedRow.status}}' WHERE "title"= {{Table1.updatedRow.title}};

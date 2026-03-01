@@ -1,0 +1,1 @@
+INSERT INTO public.jobs ("location","qualification","last_date","posted_date","status") VALUES ('{{(Table1.newRow || {}).location}}','{{(Table1.newRow || {}).qualification}}','{{(Table1.newRow || {}).last_date}}','{{(Table1.newRow || {}).posted_date}}','{{(Table1.newRow || {}).status}}')

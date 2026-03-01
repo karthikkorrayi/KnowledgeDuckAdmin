@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69a1647f1ee0516d4f79e8ab_5bc22fba-e246-4564-b0c2-6021fa22d761",
-  "id": "Page1_DeleteQuery",
+  "gitSyncId": "69a1647f1ee0516d4f79e8ab_0946f16b-41dc-4936-a734-ccb6e2adc8b6",
+  "id": "Jobs_insertJob",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM auth.\"audit_log_entries\"\n  WHERE \"id\" = {{data_table.triggeredRow.id}};",
+      "body": "INSERT INTO jobs (title, location, qualification, last_date, posted_date, status)\nVALUES (\n  '{{JobForm.data.title}}',\n  '{{JobForm.data.Input1}}',\n  '{{JobForm.data.qualification}}',\n  '{{JobForm.data.last_date}}',\n  NOW(),\n  '{{JobForm.data.status}}'\n);",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "name": "DeleteQuery",
-    "pageId": "Page1",
+    "name": "insertJob",
+    "pageId": "Jobs",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

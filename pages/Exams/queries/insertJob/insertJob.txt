@@ -1,0 +1,9 @@
+INSERT INTO jobs (title, location, qualification, last_date, posted_date, status)
+VALUES (
+  '{{ExamForm.data.title}}',
+  '{{ExamForm.data.location}}',
+  '{{ExamForm.data.qualification}}',
+  '{{ExamForm.data.last_date}}',
+  NOW(),
+  '{{ExamForm.data.status}}'
+);

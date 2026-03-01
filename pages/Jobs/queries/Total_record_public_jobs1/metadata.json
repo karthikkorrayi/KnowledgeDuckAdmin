@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69a1647f1ee0516d4f79e8ab_06a144cf-8c8e-462e-abb2-3dde7f0d547d",
-  "id": "Page1_SelectQuery",
+  "gitSyncId": "69a1647f1ee0516d4f79e8ab_779e0e44-55bb-4c5c-8c89-5bf93f93c8a7",
+  "id": "Jobs_Total_record_public_jobs1",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM auth.\"audit_log_entries\"\nWHERE \"ip_address\" ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY \"{{data_table.sortOrder.column || 'id'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT COUNT(*) from public.jobs;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "name": "SelectQuery",
-    "pageId": "Page1",
-    "runBehaviour": "AUTOMATIC",
-    "userSetOnLoad": true
+    "name": "Total_record_public_jobs1",
+    "pageId": "Jobs",
+    "runBehaviour": "MANUAL",
+    "userSetOnLoad": false
   }
 }

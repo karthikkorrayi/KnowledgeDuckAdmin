@@ -1,23 +1,23 @@
 {
-  "gitSyncId": "69a1647f1ee0516d4f79e8ab_d3e8c8fa-dbd1-4379-91fc-89ab9e26dd4f",
+  "gitSyncId": "69a1647f1ee0516d4f79e8ab_d786da3b-4546-42b6-a08b-35578d322ce4",
   "unpublishedPage": {
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 380,
+          "bottomRow": 450,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 900,
+          "minHeight": 840,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 1174,
+          "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 125,
+          "snapRows": 82,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 94,
@@ -26,7 +26,7 @@
         }
       }
     ],
-    "name": "Page1",
-    "slug": "page1"
+    "name": "Exams",
+    "slug": "exams"
   }
 }
